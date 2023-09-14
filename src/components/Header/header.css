@@ -1,0 +1,32 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.header-logo{
+    padding: 1rem;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.nav-items > li {
+    padding: 1rem;
+    margin: 1rem;
+    font-size: calc(10px + 0.8rem);
+}
