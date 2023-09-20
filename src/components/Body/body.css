@@ -10,8 +10,14 @@
 
 .filter{
     margin: 1rem;
+    display: flex;
+    margin: 3px;
 }
 
 .filter-btn:hover{
     cursor: pointer;
+}
+
+.search-input{
+    margin-right: 10px;
 }
