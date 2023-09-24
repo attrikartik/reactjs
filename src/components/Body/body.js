@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import RestaurantCard from '../ResataurantCard/RestaurantCard'
 import { resList } from '../../../common/utils'
-import './body.css'
+// import './body.css'
 import useOnlineStatus from '../../../common/CustomHooks/useOnlineStatus'
 
 export default  Body = () => {
@@ -71,9 +71,9 @@ export default  Body = () => {
         
         <div className='body'>
             <div className='filter'>
-                <div className='search-input'>
-                   <input type='search' onChange={setInputValue} value={searchValue} />
-                   <button onClick={getFilteredData}>Search</button>
+                <div className='p-4 m-4'>
+                   <input type='input' className='border border-solid border-black' onChange={setInputValue} value={searchValue} />
+                   <button className='px-4  m-6 border border-slate-400 rounded-md text-white bg-blue-400' onClick={getFilteredData}>Search</button>
                 </div>
                 <button className='filter-btn' onClick={getTopRatedRestaurants}>
                     Top Rated

@@ -1,5 +1,5 @@
 import React from 'react'
-import './ResataurantCard.css'
+// import './ResataurantCard.css'
 import {IMAGE_URL} from '../../../common/constant.js'
 
 export default RestaurantCard = (res) =>{
