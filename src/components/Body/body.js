@@ -55,7 +55,12 @@ export default  Body = () => {
 
         // create restaurant cards
         const resultList = list?.length >0&& list.map(res=>{
-            return<Link to={`/restaurants/${res?.data?.id}`}  key={res.data.id}><RestaurantCard res={res}/></Link>
+            console.log(res)
+            return(
+                <Link to={`/restaurants/${res?.data?.id}`}  key={res.data.id}>
+                    <RestaurantCard res={res}/>
+                </Link>
+            )
         })
 
         return resultList
@@ -70,16 +75,18 @@ export default  Body = () => {
     return(
         
         <div className='body'>
-            <div className='filter'>
+            <div className='flex'>
                 <div className='p-4 m-4'>
                    <input type='input' className='border border-solid border-black' onChange={setInputValue} value={searchValue} />
                    <button className='px-4  m-6 border border-slate-400 rounded-md text-white bg-blue-400' onClick={getFilteredData}>Search</button>
                 </div>
-                <button className='filter-btn' onClick={getTopRatedRestaurants}>
+                <div className='p-4 m-4'>
+                    <button className='px-4  m-6 border border-slate-400 rounded-md text-white bg-blue-400' onClick={getTopRatedRestaurants}>
                     Top Rated
-                </button>
+                    </button>
+                </div>
             </div>
-            <div className='restaurant-container'>
+            <div className='flex items-center justify-center flex-wrap w-full'>
             {
                getRestuarantList()
             }

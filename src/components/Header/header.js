@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
     
 export default Header = () =>{
     return (
-     <div className='flex justify-between p-2 m-2 shadow-lg'>
+     <div className='flex justify-between p-2 m-2 shadow-lg bg-green-50'>
      <div className=''>
          <img className='w-56' src={Logo}/>
      </div>
