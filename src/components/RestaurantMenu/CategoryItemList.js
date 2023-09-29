@@ -1,10 +1,20 @@
 import React from 'react'
 import { IMAGE_URL } from '../../../common/constant'
+import { useDispatch } from 'react-redux'
+import { addItem } from '../../store/cart'
 
 export default CategoryItemList = ({items}) => {
     console.log(items)
 
-  return (
+    // dispatch for dispatching action to reducers
+    const dispatch = useDispatch()
+
+    // funtion to add item to card
+    const addItemToCart = (info) =>{
+      // action dispatched to add item 
+      dispatch(addItem(info))
+    }
+    return (
     <div>
        {
         items!=null&&items?.length &&items.map(i=>{
@@ -26,7 +36,7 @@ export default CategoryItemList = ({items}) => {
                 <div className='w-3/12 relative'>
                     <img src={`${IMAGE_URL}${info?.imageId}`} />
                     <div className='absolute right-12 bottom-0.5'>
-                        <button className='flex items-center justify-center px-2  bg-slate-50 shadow-lg border rounded-xl text-green-800 font-serif'>ADD +</button>
+                        <button className='flex items-center justify-center px-2  bg-slate-50 shadow-lg border rounded-xl text-green-800 font-serif' onClick={()=>addItemToCart(info)}>ADD +</button>
                     </div>
                 </div>
             </div>

@@ -1,9 +1,18 @@
 import React from 'react'
 import Logo from '../../../images/logo.jpg'
 import {Link} from 'react-router-dom'
-// import './header.css'
+import { useSelector } from 'react-redux'
+
     
 export default Header = () =>{
+
+    // get cart state from store
+    const cartItems = useSelector(store=>store.cart.items)
+    console.log(cartItems)
+
+    // label for cart item count to show in header
+    const getCartCount = () => cartItems.length ? <span className='text-red-400'>{`(${cartItems.length})`}</span>: ""
+
     return (
      <div className='flex justify-between p-2 m-2 shadow-lg bg-green-50'>
      <div className=''>
@@ -21,7 +30,7 @@ export default Header = () =>{
                     <Link to="/contact">Contact</Link>
                 </li>
                 <li  className='px-6'>
-                    <Link to="/cart">Cart</Link>
+                    <Link to="/cart" className='font-bold'>Cart {getCartCount()}</Link>
                 </li>
              </ul>
          </div>
