@@ -10,14 +10,14 @@ export default CategoryItemList = ({items}) => {
     const dispatch = useDispatch()
 
     // funtion to add item to card
-    const addItemToCart = (info) =>{
+    const addItemToCart = (card) =>{
       // action dispatched to add item 
-      dispatch(addItem(info))
+      dispatch(addItem(card))
     }
     return (
     <div>
        {
-        items!=null&&items?.length &&items.map(i=>{
+        items!=null&&items?.length ? items.map(i=>{
             {/* console.log(i) */}
         const {info} = i?.card 
         console.log(i)
@@ -36,13 +36,13 @@ export default CategoryItemList = ({items}) => {
                 <div className='w-3/12 relative'>
                     <img src={`${IMAGE_URL}${info?.imageId}`} />
                     <div className='absolute right-12 bottom-0.5'>
-                        <button className='flex items-center justify-center px-2  bg-slate-50 shadow-lg border rounded-xl text-green-800 font-serif' onClick={()=>addItemToCart(info)}>ADD +</button>
+                        <button className='flex items-center justify-center px-2  bg-slate-50 shadow-lg border rounded-xl text-green-800 font-serif' onClick={()=>addItemToCart(i)}>ADD +</button>
                     </div>
                 </div>
             </div>
             
             )
-        })
+        }):""
        }
     </div>
   )
