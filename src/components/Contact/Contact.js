@@ -1,7 +1,6 @@
 import React from 'react'
 
-    
-export default Contact = () =>{
+const  Contact = () => {
     return (
          <div>
            <h1 className='font-bold text-3xl p-4 m-4'>Contact us</h1>
@@ -16,3 +15,4 @@ export default Contact = () =>{
     )
  }
  
+ export default Contact

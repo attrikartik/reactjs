@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
     
-export default Header = () =>{
+const Header = () =>{
 
     // get cart state from store
     const cartItems = useSelector(store=>store.cart.items)
@@ -37,4 +37,6 @@ export default Header = () =>{
      </div>
     )
  }
+
+ export default Header
  
