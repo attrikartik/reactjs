@@ -4,7 +4,7 @@ import CategoryItemList from '../RestaurantMenu/CategoryItemList'
 import { clearCart } from '../../store/cart'
 
     
-export default Cart = () =>{
+const Cart = () =>{
 
     const cartItems = useSelector(store=> store?.cart?.items)
     const dispatch = useDispatch()
@@ -29,4 +29,4 @@ export default Cart = () =>{
          </div>
     )
  }
- 
+ export default Cart

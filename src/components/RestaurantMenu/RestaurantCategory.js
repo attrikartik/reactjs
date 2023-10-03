@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import CategoryItemList from './CategoryItemList'
-export default RestaurantCategory = ({card,showItems,setShowCategoryIndex}) => {
+
+const RestaurantCategory = ({card,showItems,setShowCategoryIndex}) => {
 
 
   const handleShowCategory = () =>{
@@ -25,3 +26,4 @@ export default RestaurantCategory = ({card,showItems,setShowCategoryIndex}) => {
     
   )
 }
+export default RestaurantCategory

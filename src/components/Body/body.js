@@ -5,7 +5,7 @@ import { resList } from '../../../common/utils'
 // import './body.css'
 import useOnlineStatus from '../../../common/CustomHooks/useOnlineStatus'
 
-export default  Body = () => {
+const Body = () => {
 
     const [restaurantList, setRestaurantList] = useState(resList || [])
     const [filterRestaurantList, setFilterRestaurantList] = useState(resList || [])
@@ -55,9 +55,9 @@ export default  Body = () => {
 
         // create restaurant cards
         const resultList = list?.length >0&& list.map(res=>{
-            console.log(res)
+            // console.log(res)
             return(
-                <Link to={`/restaurants/${res?.data?.id}`}  key={res.data.id}>
+                <Link data-testid='resCard' to={`/restaurants/${res?.data?.id}`}  key={res?.data?.id}>
                     <RestaurantCard res={res}/>
                 </Link>
             )
@@ -77,7 +77,7 @@ export default  Body = () => {
         <div className='body'>
             <div className='flex'>
                 <div className='p-4 m-4'>
-                   <input type='input' className='border border-solid border-black' onChange={setInputValue} value={searchValue} />
+                   <input type='input' data-testid='searchInput' className='border border-solid border-black' onChange={setInputValue} value={searchValue} />
                    <button className='px-4  m-6 border border-slate-400 rounded-md text-white bg-blue-400' onClick={getFilteredData}>Search</button>
                 </div>
                 <div className='p-4 m-4'>
@@ -95,4 +95,4 @@ export default  Body = () => {
         </div>
     )
 }
- 
+export default  Body 

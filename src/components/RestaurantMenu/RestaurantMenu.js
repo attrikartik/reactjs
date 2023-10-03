@@ -5,7 +5,7 @@ import { ITEM_CATEGORY_FILTER_STRING } from '../../../common/constant'
 import useRestaurantMenu from '../../../common/CustomHooks/useRestaurantMenu'
 import RestaurantCategory from './RestaurantCategory'
 
-export default RestaurantMenu = () => {
+const RestaurantMenu = () => {
 
     // showCategoryIndex variable to show which acridian should be visible
     const [showCategoryIndex, setShowCategoryIndex] = useState(0)
@@ -48,3 +48,5 @@ export default RestaurantMenu = () => {
         </div>
   )
 }
+
+export default RestaurantMenu 

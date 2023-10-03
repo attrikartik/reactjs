@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../../images/logo.jpg'
+// import Logo from '../../../images/logo.jpg'
 import {Link} from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
@@ -16,7 +16,7 @@ const Header = () =>{
     return (
      <div className='flex justify-between p-2 m-2 shadow-lg bg-green-50'>
      <div className=''>
-         <img className='w-56' src={Logo}/>
+         {/* <img className='w-56' src={Logo}/> */}
      </div>
          <div className='flex items-center'>
              <ul className='flex p-4 m-6'>

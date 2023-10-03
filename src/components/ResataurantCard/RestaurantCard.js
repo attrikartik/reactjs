@@ -2,8 +2,8 @@ import React from 'react'
 // import './ResataurantCard.css'
 import {IMAGE_URL} from '../../../common/constant.js'
 
-export default RestaurantCard = (res) =>{
-
+const RestaurantCard = (res) =>{
+console.log(res)
     const {name,avgRating,cuisines,deliveryTime,costForTwo,cloudinaryImageId,promoted} = res?.res?.data
 
     return(
@@ -22,4 +22,4 @@ export default RestaurantCard = (res) =>{
         </div>
     )
 }
-
+export default RestaurantCard ;

@@ -1,0 +1,134 @@
+{
+    "type": "F",
+    "id": "337335",
+    "name": "Kannur food kitchen",
+    "uuid": "c70b61bc-0f68-4e24-996b-749fbf295c35",
+    "city": "1",
+    "area": "BTM Layout",
+    "totalRatingsString": "1000+ ratings",
+    "cloudinaryImageId": "a27weqanhnszqiuzsoik",
+    "cuisines": [
+        "Kerala",
+        "Biryani",
+        "Beverages"
+    ],
+    "tags": [],
+    "costForTwo": 20000,
+    "costForTwoString": "₹200 FOR TWO",
+    "deliveryTime": 30,
+    "minDeliveryTime": 30,
+    "maxDeliveryTime": 30,
+    "slaString": "30 MINS",
+    "lastMileTravel": 2.5,
+    "slugs": {
+        "restaurant": "kannur-food-kitchen-btm-btm",
+        "city": "bangalore"
+    },
+    "cityState": "1",
+    "address": "kannur food point, Chocolate Factory Road, Tavarekere, Cashier Layout, 1st Stage, BTM Layout, thavrakharea, Karnataka, India",
+    "locality": "1st  Stage",
+    "parentId": 114756,
+    "unserviceable": false,
+    "veg": false,
+    "select": false,
+    "favorite": false,
+    "tradeCampaignHeaders": [],
+    "aggregatedDiscountInfo": {
+        "header": "FREE DELIVERY",
+        "shortDescriptionList": [
+            {
+                "meta": "FREE DELIVERY",
+                "discountType": "FREE_DELIVERY",
+                "operationType": "RESTAURANT"
+            },
+            {
+                "meta": "50% off on all orders",
+                "discountType": "Percentage",
+                "operationType": "RESTAURANT"
+            }
+        ],
+        "descriptionList": [
+            {
+                "meta": "FREE DELIVERY",
+                "discountType": "FREE_DELIVERY",
+                "operationType": "RESTAURANT"
+            },
+            {
+                "meta": "50% off on all orders",
+                "discountType": "Percentage",
+                "operationType": "RESTAURANT"
+            }
+        ],
+        "subHeader": "",
+        "headerType": 0,
+        "superFreedel": ""
+    },
+    "aggregatedDiscountInfoV2": {
+        "header": "50% OFF",
+        "shortDescriptionList": [
+            {
+                "meta": "Free Delivery",
+                "discountType": "FREE_DELIVERY",
+                "operationType": "RESTAURANT"
+            }
+        ],
+        "descriptionList": [
+            {
+                "meta": "FREE DELIVERY",
+                "discountType": "FREE_DELIVERY",
+                "operationType": "RESTAURANT"
+            },
+            {
+                "meta": "50% off on all orders",
+                "discountType": "Percentage",
+                "operationType": "RESTAURANT"
+            }
+        ],
+        "subHeader": "",
+        "headerType": 0,
+        "superFreedel": ""
+    },
+    "chain": [],
+    "feeDetails": {
+        "fees": [],
+        "totalFees": 0,
+        "message": "",
+        "title": "",
+        "amount": "",
+        "icon": ""
+    },
+    "availability": {
+        "opened": true,
+        "nextOpenMessage": "",
+        "nextCloseMessage": ""
+    },
+    "longDistanceEnabled": 0,
+    "rainMode": "NONE",
+    "thirdPartyAddress": false,
+    "thirdPartyVendor": "",
+    "adTrackingID": "",
+    "badges": {
+        "imageBased": [],
+        "textBased": [],
+        "textExtendedBadges": []
+    },
+    "lastMileTravelString": "2.5 kms",
+    "hasSurge": false,
+    "sla": {
+        "restaurantId": "337335",
+        "deliveryTime": 30,
+        "minDeliveryTime": 30,
+        "maxDeliveryTime": 30,
+        "lastMileTravel": 2.5,
+        "lastMileDistance": 0,
+        "serviceability": "SERVICEABLE",
+        "rainMode": "NONE",
+        "longDistance": "NOT_LONG_DISTANCE",
+        "preferentialService": false,
+        "iconType": "EMPTY"
+    },
+    "promoted": false,
+    "avgRating": 3.8,
+    "totalRatings": 1000,
+    "new": false
+}

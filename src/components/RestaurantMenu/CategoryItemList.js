@@ -3,7 +3,7 @@ import { IMAGE_URL } from '../../../common/constant'
 import { useDispatch } from 'react-redux'
 import { addItem } from '../../store/cart'
 
-export default CategoryItemList = ({items}) => {
+const CategoryItemList = ({items}) => {
     console.log(items)
 
     // dispatch for dispatching action to reducers
@@ -22,7 +22,7 @@ export default CategoryItemList = ({items}) => {
         const {info} = i?.card 
         console.log(i)
          return   (
-            <div key={info?.id}
+            <div data-testid='accordianMenuList' key={info?.id}
             className='p-2 m-2  border-b-2 text-left flex justify-between'
             >
                 <div className='w-9/12'>
@@ -47,3 +47,5 @@ export default CategoryItemList = ({items}) => {
     </div>
   )
 }
+
+export default CategoryItemList
